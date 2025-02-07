@@ -1,31 +1,29 @@
 #!/bin/bash
 
 # NAO APAGUE A LINHA ACIMA!
-
 #1 
-pwd
+cd ~
 mkdir joao
 mkdir maria
 
 #2
-cd /home/aluno/joao
-cp -r /etc/systemd /home/aluno/joao
+cd joao
+cp -r /etc/systemd .
 
 #3
-cd ..
-cd /home/aluno/maria
-cp -r /etc/passwd /home/aluno/maria
-cp -r /etc/group /home/aluno/maria
+cd ~ 
+cd maria
+cp -r /etc/passwd .
+cp -r /etc/group .
 
 #4
-cd ..
-cp -r /home/aluno/joao /home/aluno/joao_copia
-cp -r /home/aluno/maria /home/aluno/maria_copia
-
+cd ~
+cp -r joao joao_copia
+cp -r maria maria_copia
 #5
 mkdir mais_uma_pasta
-cp -r /home/aluno/maria /home/aluno/mais_uma_pasta
-cp -r /home/aluno/joao /home/aluno/mais_uma_pasta
+cp -r maria mais_uma_pasta
+cp -r joao mais_uma_pasta
 
 #6
 mv mais_uma_pasta/maria mais_uma_pasta/maria_aux
